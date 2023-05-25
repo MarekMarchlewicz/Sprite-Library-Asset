@@ -1,2 +1,4 @@
-# Sprite-Library-Asset
-Sprite Library Asset tools
+# Sprite Library Asset tools
+
+1. Sprite Library Source asset saver
+Tool to allow saving Sprite Library Assets as .spriteLib (SpriteLibrarySourceAsset) in Unity Editor.
