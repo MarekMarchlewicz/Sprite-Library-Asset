@@ -44,7 +44,7 @@ public static class SpriteLibraryAssetHelper
         public static readonly MethodInfo saveSpriteLibrarySourceAssetMethod = SpriteLibraryTypes.spriteLibrarySourceAssetImporterName.GetMethod("SaveSpriteLibrarySourceAsset", BindingFlags.NonPublic | BindingFlags.Static);
     }
 
-    public static SpriteLibraryAsset SaveAsSpriteLibrarySourceAsset(SpriteLibraryAsset asset, string path, SpriteLibraryAsset mainAsset)
+    public static SpriteLibraryAsset SaveAsSpriteLibrarySourceAsset(SpriteLibraryAsset asset, string path, SpriteLibraryAsset mainAsset = null)
     {
         if (asset == null || string.IsNullOrEmpty(path) || !path.StartsWith("Assets/") || Path.GetExtension(path) != assetExtension)
             return null;
